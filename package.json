@@ -4,14 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "install-global": "npm i -g gulp jasmine nodemailer",
-    "init-win": "npm run install-global && set NODE_PATH=%AppData%\\npm\\node_modules"
+    "install-global": "npm i -g gulp jasmine",
+    "set-path-win": "setx /M NODE_PATH \"%AppData%/npm/node_modules\" & setx /M PATH \"%PATH%;%cd%\\_tools",
+    "init-win": "npm install & npm run install-global & npm run set-path-win"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "gulp-file-include": "^1.1.0",
     "gulp-rename": "^1.2.2",
-    "gulp-replace": "^0.5.4"
+    "gulp-replace": "^0.5.4",
+    "nodemailer": "^3.1.8"
   }
 }
