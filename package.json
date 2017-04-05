@@ -1,0 +1,17 @@
+{
+  "name": "prepare",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install-global": "npm i -g gulp jasmine nodemailer",
+    "init-win": "npm run install-global && set NODE_PATH=%AppData%\\npm\\node_modules"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp-file-include": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.4"
+  }
+}
